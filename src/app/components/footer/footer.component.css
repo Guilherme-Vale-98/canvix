@@ -1,0 +1,154 @@
+section {
+    height: 25rem;
+    background-color: black;
+    padding: 40px 100px;
+    color: white;
+    font-family: "Roboto Serif", serif;
+}
+
+.footer-container {
+
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-top{
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 30%;
+}
+
+.logo-container{
+    font-family: "Roboto Serif", serif;
+    font-weight: 600;
+    font-size: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 0.5rem;
+}
+.logo-container img{
+    width: 40px;
+}
+.logo p {
+    font-size: 18px;
+    font-family: "DM Sans", sans-serif;
+}
+
+.pages {
+    display: flex;
+    gap: 60px;
+    justify-items: center;
+    font-family: "DM Sans", sans-serif;
+}
+
+.pages ul{
+    list-style: none;
+    padding: 0;
+}
+.pages ul li {
+    margin: 13px 0 13px 0;
+}
+
+.pages ul li p{
+    cursor: pointer;
+    display: inline;
+}
+
+.pages ul li p:hover{
+    color: rgb(112, 107, 107);
+}
+
+.subscribe{
+    width: 30%;
+}
+
+
+.subscribe div{
+position: relative;
+}
+.subscribe input{
+    all: unset;
+    background-color: white;
+    color: black;
+    position: absolute;
+    left: 0px;
+    height: 60px;
+    padding-left: 25px;
+    width: 340px;
+    border-radius: 1.4rem;
+}
+
+.subscribe input:focus{
+    outline: none;
+}
+.subscribe input::placeholder{
+    color: black;
+    opacity: 1;
+}
+.subscribe button{
+    all: unset;
+    cursor: pointer;
+    position: absolute;
+    left: 230px;
+    text-align: center;
+    top: 10px;
+    background-color: black;
+    color: white;
+    height: 40px;
+    width: 130px;
+    border-radius: 15px;
+}
+
+.subscribe button:active{
+
+    background-color: rgb(50, 50, 50);
+
+}
+
+.footer-bottom{
+    border-top: 2px solid gray;  
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.footer-bottom > div > h3 {
+    font-size: 18px;
+}
+
+.footer-bottom > div > span {
+    font-size: 14px;
+    font-family: "DM Sans", sans-serif;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: black;
+}
+
+.social a {
+    all: unset;
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 9999px;
+    padding: 10px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.social a:hover {
+    background-color: black;
+    color: white;
+}
