@@ -1,0 +1,54 @@
+nav {
+    height: 4rem;
+    background:  black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0;
+    background-color: transparent;
+    z-index: 30;
+}
+.logo-container{
+    font-family: "Roboto Serif", serif;
+    font-weight: 600;
+    font-size: 28px;
+    display: flex;
+    gap: 0.5rem;
+}
+nav>div>span>a {
+    text-decoration: none;
+    color: white;
+}
+nav > div:nth-child(2) {
+    display: flex;
+    gap: 2rem;
+    font-family: "DM Sans", sans-serif;
+}
+
+nav > div {
+    padding: 1rem;
+}
+
+img {
+    width: 30px;
+    height: 30px;
+}
+
+.nav-button {
+    all: unset;
+    text-align: center;
+    width: 139px;
+    height: 47px;
+    border-radius: 3rem;
+    color: #0c0c0c;
+    background-color: #ffffff;
+    cursor: pointer;
+    font-family: "DM Sans", sans-serif;
+    
+}
