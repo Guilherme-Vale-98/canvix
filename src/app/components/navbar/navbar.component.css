@@ -5,14 +5,35 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+    padding-left: 100px;
+    padding-right: 100px;
     position: -webkit-sticky; /* For Safari */
     position: sticky;
     top: 0;
     background-color: transparent;
     z-index: 30;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav.whiteBg {
+    background-color: white; 
+    color: black; 
+}
+
+nav.whiteBg > div > span> a {
+    text-decoration: none;
+    color: black;
+}
+nav.whiteBg > div > button {
+    all: unset;
+    text-align: center;
+    width: 139px;
+    height: 47px;
+    border-radius: 3rem;
+    color: #ffffff;
+    background-color: #000000;
+    cursor: pointer;
+    font-family: "DM Sans", sans-serif;  
 }
 .logo-container{
     font-family: "Roboto Serif", serif;
@@ -49,6 +70,5 @@ img {
     color: #0c0c0c;
     background-color: #ffffff;
     cursor: pointer;
-    font-family: "DM Sans", sans-serif;
-    
+    font-family: "DM Sans", sans-serif;  
 }

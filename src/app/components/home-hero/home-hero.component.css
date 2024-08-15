@@ -8,6 +8,7 @@
     align-items: center;
     justify-content: start;
     font-family: "Roboto Serif", serif;
+    overflow: hidden;
 }
 
 .ornament{
@@ -20,16 +21,18 @@
 }
 
 .heroImage {
-    height: 50rem;
-    left: 40%;
     position: absolute;
+    left: 450px;
+    height: 800px;
+    width: 500px;
+    top: 5px;
     display: flex;
 }
 
 .ornament > img {
     height: 100%;
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .ornament > img {
@@ -52,6 +55,8 @@
 .info-container{
     width: 500px;
     height: 550px;
+    margin-top: 120px;
+
 }
 
 .hero-text{
@@ -84,7 +89,7 @@
 }
 
 .brands{
-
+    margin-top: 100px;
 }
 
 .brands img{
@@ -92,7 +97,6 @@
 }
 
 .brands h3{
-    margin-top: 100px;
     color: #64CCC5;
     font-size: 0.9rem;
 }
