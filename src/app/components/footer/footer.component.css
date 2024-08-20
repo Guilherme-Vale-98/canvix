@@ -1,4 +1,4 @@
-section {
+footer {
     height: 25rem;
     background-color: black;
     padding: 40px 100px;
@@ -79,9 +79,10 @@ position: relative;
     position: absolute;
     left: 0px;
     height: 60px;
-    padding-left: 25px;
-    width: 340px;
+    padding-left: 20px;
+    width: 380px;   
     border-radius: 1.4rem;
+    font-size: 14px;
 }
 
 .subscribe input:focus{
@@ -95,7 +96,7 @@ position: relative;
     all: unset;
     cursor: pointer;
     position: absolute;
-    left: 230px;
+    left: 260px;
     text-align: center;
     top: 10px;
     background-color: black;

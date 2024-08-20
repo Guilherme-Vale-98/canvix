@@ -30,10 +30,10 @@ export class NavbarComponent {
       document.body.scrollTop ||
       0;
     
-    this.whiteBg = scrollPosition > 680 && scrollPosition < 900;
-    if(scrollPosition > 900 && scrollPosition < 1050){
+    this.whiteBg = scrollPosition > 680;
+    /* if(scrollPosition > 900 && scrollPosition < 1050){
       this.whiteBg = false;
-    }
+    } */
     this.logoUrl = scrollPosition > 680 ? "assets/logoBlack.png" : "assets/logo.png";
   
   }
