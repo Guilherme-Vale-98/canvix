@@ -13,6 +13,7 @@ nav {
     background-color: transparent;
     z-index: 30;
     transition: background-color 0.3s, color 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 nav.whiteBg {

@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, HostListener } from '@angular/core';
-import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+import { ActivatedRoute, NavigationEnd, Router, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -10,17 +10,34 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
   styleUrl: './navbar.component.css',
 })
 export class NavbarComponent {
-  whiteBg = false;
-  logoUrl = "assets/logo.png";
-  
+  whiteBg = true;
+  logoUrl = "assets/logoBlack.png";
+  isHomePage: boolean = true;
+
+  constructor(private router: Router, private route: ActivatedRoute) {}
+
   ngOnInit() {
-    this.checkScrollPosition();
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        this.isHomePage = this.router.url === '/home';
+        console.log(this.isHomePage)
+        if (this.isHomePage) {
+          this.checkScrollPosition();
+          return
+        }
+        this.whiteBg = true;
+        this.logoUrl = "assets/logoBlack.png";
+      }
+    });
   }
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
-    this.checkScrollPosition();
+    if (this.isHomePage) {
+      this.checkScrollPosition();
+    }
   }
+  
 
   checkScrollPosition() {
     if (typeof window !== "undefined"){
@@ -29,6 +46,7 @@ export class NavbarComponent {
       document.documentElement.scrollTop ||
       document.body.scrollTop ||
       0;
+    
     console.log(scrollPosition)
     this.whiteBg = scrollPosition > 670;
     this.logoUrl = scrollPosition > 670 ? "assets/logoBlack.png" : "assets/logo.png";
