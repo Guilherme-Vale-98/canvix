@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { CardComponent } from "../card/card.component";
 import { Service } from './services.model';
 import { CommonModule } from '@angular/common';
+import { AboutHeroComponent } from "../about-hero/about-hero.component";
 
 @Component({
   selector: 'app-services',
   standalone: true,
-  imports: [CommonModule,CardComponent],
+  imports: [CommonModule, CardComponent, AboutHeroComponent],
   templateUrl: './services.component.html',
   styleUrl: './services.component.css'
 })
