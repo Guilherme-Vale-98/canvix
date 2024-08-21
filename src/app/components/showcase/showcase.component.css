@@ -1,0 +1,11 @@
+section{
+    height: 1000px;
+    text-align: center;
+    font-family: "Roboto Serif", serif;
+    border: 2px solid red;
+    margin-top: 60px;
+}
+.title{
+    font-size: 54px;
+
+}

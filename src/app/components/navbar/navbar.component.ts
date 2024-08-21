@@ -29,12 +29,14 @@ export class NavbarComponent {
       document.documentElement.scrollTop ||
       document.body.scrollTop ||
       0;
-    
-    this.whiteBg = scrollPosition > 680;
-    /* if(scrollPosition > 900 && scrollPosition < 1050){
+    console.log(scrollPosition)
+    this.whiteBg = scrollPosition > 670;
+    this.logoUrl = scrollPosition > 670 ? "assets/logoBlack.png" : "assets/logo.png";
+    if(scrollPosition > 1750 && scrollPosition < 2390){
       this.whiteBg = false;
-    } */
-    this.logoUrl = scrollPosition > 680 ? "assets/logoBlack.png" : "assets/logo.png";
+      this.logoUrl = "assets/logo.png"
+    }
+  
   
   }
   }
