@@ -1,4 +1,4 @@
-<section class="card-container">
+<section class="card-container" [ngClass]="{'selected': service.selected}">
     <div class="icon-container">
         <ng-icon size="30" [name]="service.icon"></ng-icon>
     </div>

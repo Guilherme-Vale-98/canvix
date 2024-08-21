@@ -4,6 +4,6 @@
             <h2>High-impact services <br> for your business</h2>
         </div>
         <div class="grid">
-            <app-card *ngFor="let service of services" [service]="service"/>
+            <app-card *ngFor="let service of services" [service]="service" (click)="selectCard(service)" />
         </div>
 </section>
