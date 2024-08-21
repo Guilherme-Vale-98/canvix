@@ -9,6 +9,7 @@
     justify-content: start;
     font-family: "Roboto Serif", serif;
     overflow: hidden;
+    width: 100vw;
 }
 
 .ornament{

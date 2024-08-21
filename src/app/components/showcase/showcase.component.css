@@ -1,11 +1,32 @@
 section{
-    height: 1000px;
     text-align: center;
     font-family: "Roboto Serif", serif;
-    border: 2px solid red;
     margin-top: 60px;
+    padding: 0 150px;
+    height: 1000px;
+    position: relative;
 }
 .title{
     font-size: 54px;
+}
+.grid-container{
+    display: grid;
+    height: 80%;
+    grid-template-columns: repeat(2, 1fr);
+}
 
+
+.grid-item{
+    display: flex;
+}
+
+.grid-item:nth-child(even){
+    align-self: flex-end;
+    justify-self: left;
+    margin-left: 25px;
+}
+.grid-item:nth-child(odd){
+    align-self: flex-start;
+    justify-self: right;
+    margin-right: 25px;
 }

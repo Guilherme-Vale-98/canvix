@@ -1,6 +1,8 @@
 <section>
     <h1 class="title">Recent Showcase</h1>
-    <div>
-        GRID
+    <div class="grid-container">
+        <app-project-card *ngFor="let project of projects" 
+        [project]="project" class="grid-item"/>
+ 
     </div>
 </section>

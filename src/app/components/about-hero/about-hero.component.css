@@ -42,13 +42,13 @@ button{
 .text-container h1 {
     color: var(--light-green);
     font-weight: 600;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 .text-container h2 {
     margin-top: 25px;
     margin-bottom: 0;
     font-weight: 600;
-    font-size: 48px;
+    font-size: 2.6rem;
 }
 .text-container p {
     font-size: 13px;
