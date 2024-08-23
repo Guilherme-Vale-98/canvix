@@ -1,8 +1,7 @@
 <section>
     <h1 class="title">Recent Showcase</h1>
     <div class="grid-container">
-        <app-project-card *ngFor="let project of projects" 
+        <app-project-card *ngFor="let project of projects | slice:0:4" 
         [project]="project" class="grid-item"/>
- 
     </div>
 </section>

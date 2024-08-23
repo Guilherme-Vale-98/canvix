@@ -1,5 +1,31 @@
-<p>project-details works!
-</p>
-<div>
-    {{project.title}}
-</div>
+<section>
+    <div class="img-container">
+        <img [src]="project.imgUrl">
+        <div class="prop-container">
+            <div class="prop-wrapper">Category <br> <span>{{project.category}}</span> </div>
+            <div class="prop-wrapper">Client <br> <span>{{project.client}}</span> </div>
+            <div class="prop-wrapper">Date <br> <span>{{project.date}}</span> </div>
+            <div class="prop-wrapper">Location<br> <span>{{project.location}}</span> </div>
+        </div>
+
+        <div class="details-container">
+            <div class="text-container">
+                <h2 >01. The Challenge</h2>
+                <div >{{project.description.challenge}}</div>
+                <h2 >02. The Solution</h2>
+                <div >{{project.description.solution}}</div>
+                <h2 >03. The Result</h2>
+                <div >{{project.description.result}}</div>
+            </div>
+            <div class="photo-container">
+                <img src="assets/photo1.png" alt="">
+                <img src="assets/photo2.png" alt="">
+                <img src="assets/photo3.png" alt="">
+            </div>
+        </div>
+        <div class="recent-projects">
+            <h1>Recent Projects</h1>
+            <app-project-card *ngFor="let proj of projects | slice:0:3" [project]="proj" /> 
+        </div>  
+    </div>
+</section>

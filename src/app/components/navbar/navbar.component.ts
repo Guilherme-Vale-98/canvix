@@ -27,6 +27,7 @@ export class NavbarComponent {
         }
         this.whiteBg = true;
         this.logoUrl = "assets/logoBlack.png";
+        if(typeof window !== "undefined") window.scrollTo(0,0)
       }
     });
   }
