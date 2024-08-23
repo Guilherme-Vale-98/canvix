@@ -1,0 +1,142 @@
+.contact-container{
+    height: 1000px;
+    padding-left: 110px;
+    padding-right: 110px;
+    margin-bottom: 50px;
+    font-family: "Roboto Serif", serif;
+}
+
+.info-container{
+    height: auto;
+    margin-top: 50px;
+    display: flex;
+}
+.info {
+    width: 50%;
+    height: 100%;
+}
+.info p {
+    font-size: 18px;
+    font-family: "DM Sans", sans-serif;
+}
+.info h1 {
+    font-size: 60px;
+    font-weight: 600;
+    margin-top: 0;
+}
+
+.form-container{
+    box-sizing: border-box;
+    width: 50%;
+    padding: 45px;
+    background-color: #DFDFDF;
+    border-radius: 20px;
+    font-size: 18px;
+}
+.form-container > div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-family: "DM Sans", sans-serif;
+    margin-bottom: 30px;
+}
+.input-container input{
+    all: unset;
+    border-bottom: 1px solid #aeadad;
+    width: 100%;
+}
+
+.message{
+    width: 100%;
+}
+.map{
+    height: 300px;
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+}
+
+.icon{
+    background-color: black;
+    color: white;
+    height: 30px;
+    width: 30px;
+    padding: 8px;
+    border-radius: 9999px;
+}
+
+ul {
+    border-top: 2px solid #DFDFDF;
+    border-bottom: 2px solid #DFDFDF;
+    padding: 15px 0 30px  0;
+    width: 70%;
+}
+.item div {
+    display: flex;
+    flex-direction: column;
+}
+.item div :first-child{
+    margin: 0;
+    font-family: "Roboto Serif", serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+.item div :nth-child(2){
+    margin: 0;
+    font-size: 18px;
+    font-family: "DM Sans", sans-serif;
+}
+.item{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 15px;
+}
+
+
+
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+    color: black;
+}
+
+.social a {
+    all: unset;
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 9999px;
+    padding: 10px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.social a:hover {
+    background-color: black;
+    color: white;
+}
+
+
+button{
+    all: unset;
+    text-align: center;
+    width: 139px;
+    height: 40px;
+    border-radius: 2rem;
+    color: white;
+    background-color: #0c0c0c;
+    cursor: pointer;
+    font-family: "DM Sans", sans-serif;
+    margin-top: 30px;
+}
