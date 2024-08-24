@@ -67,7 +67,11 @@ footer {
 .subscribe{
     width: 30%;
 }
-
+@media (max-width:1200px) {
+    .subscribe{
+        display: none;
+    }
+}
 
 .subscribe div{
 position: relative;
