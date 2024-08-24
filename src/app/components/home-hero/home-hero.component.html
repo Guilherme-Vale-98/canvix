@@ -1,25 +1,31 @@
-<section class="home-hero">
+<section class="home-hero" *ngIf="imagesLoaded; else loading">
     <div class="ornament">
-        <img src="assets/ornament1.png" alt="ornamento">
+      <img src="assets/ornament1.png" alt="ornamento">
     </div>
     <div class="heroImage">
-        <img src="assets/homeHeroImage.png" alt="">
+      <img src="assets/homeHeroImage.png" alt="">
     </div>
     <div class="content-container">
-        <div class="info-container">
-            <div class="hero-text">
-                <h1>Ready to take your <span>Business Growth</span> to the next level?</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit- et ut massa libero egestas malesuada viverra gravida libero cursus nulla leo pulvinar.</p>
-                <div>
-                    <button>Start your Free Trial</button>
-                </div>
-            </div>
-            <div class="brands">
-                <h3>Trusted by Leading Brands</h3>
-                <div>
-                    <img src="assets/brands1.png" alt="brands">
-                </div>
-            </div>
+      <div class="info-container">
+        <div class="hero-text">
+          <h1>Ready to take your <span>Business Growth</span> to the next level?</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit- et ut massa libero egestas malesuada viverra gravida libero cursus nulla leo pulvinar.</p>
+          <div>
+            <button>Start your Free Trial</button>
+          </div>
         </div>
+        <div class="brands">
+          <h3>Trusted by Leading Brands</h3>
+          <div>
+            <img src="assets/brands1.png" alt="brands">
+          </div>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
+  
+  <ng-template #loading>
+    <div class="loading-overlay">
+      <p>Loading...</p>
+    </div>
+  </ng-template>
