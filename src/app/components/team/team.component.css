@@ -1,0 +1,46 @@
+.call-to-work {
+    margin-bottom: 50px;
+    height: 210px;
+    width: 100%;
+    background-image: url('/assets/call%20to%20action.png');
+    background-size: cover; 
+    background-position: center;
+    border-radius: 20px;
+    font-family: "Roboto Serif", serif;
+    font-size: 35px;
+    color: white;
+    font-weight: 600;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.call-to-work button {
+    all: unset;
+    text-align: center;
+    width: 139px;
+    height: 47px;
+    font-weight: 400;
+    border-radius: 3rem;
+    font-size: 16px;
+    color: #0c0c0c;
+    background-color: #ffffff;
+    cursor: pointer;
+    font-family: "DM Sans", sans-serif;  
+}
+
+
+.card-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.section-title{
+    width: 100%;
+    text-align: center;
+    font-family: "Roboto Serif", serif;
+    font-weight: 600;
+    font-size: 50px;
+}

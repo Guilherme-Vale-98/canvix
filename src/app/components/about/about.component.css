@@ -1,3 +1,101 @@
-div {
-    height: 1000px;
+.about-section{
+    padding: 0 120px;
+    margin-top: 50px;
+}
+.text-container{
+    margin-left: 150px;
+    width: 45%;
+    padding: 40px 30px;
+    height: auto;
+    color: white;
+    font-family: "Roboto Serif", serif;
+}
+
+.about-container{
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+button{
+    all: unset;
+    cursor: pointer;
+    background: #fff;
+    color: black;
+    font-size: 1rem;
+    height: 40px;
+    border-radius: 2rem;
+    text-align: center;
+    width: 200px;
+    font-size: 15px;
+    font-family: "DM Sans", sans-serif;
+}
+
+
+.text-container h1 {
+    color: var(--light-green);
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+.text-container h2 {
+    margin-top: 25px;
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: 2.6rem;
+}
+.text-container p {
+    font-size: 13px;
+    font-family: "DM Sans", sans-serif;  
+}
+.text-container div {
+    display: flex;
+    gap: 10px;
+}
+.text-container div div {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 > span {
+    color: var(--light-green);
+}
+
+.rating{
+    font-family: "Roboto Serif", serif;
+    font-weight: 600;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.img-container{
+    display: flex;
+}
+
+.img-container img{
+    width: 100%;
+    height: auto;
+}
+
+.info-container{
+    display: flex;
+    margin-top: 100px;
+    text-align: center;
+    gap: 160px;
+}
+
+.info-item h1{
+    font-size: 40px;
+    font-family: "Roboto Serif", serif;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.info-item span{
+    font-size: 20px;
+    font-family: "Roboto Serif", serif;
+    font-weight: 500;
+}
+.info-item p{
+    font-size: 14px;
+    font-family: "DM Sans", sans-serif;  
+    font-weight: 400;
 }

@@ -1,0 +1,10 @@
+<section class="team-section">
+    <h1 class="section-title">Our team</h1>
+    <div class="card-container">
+        <app-team-card *ngFor="let member of members" [member]="member"/>
+    </div>
+    <div class="call-to-work">
+        <h1>Enough talk, let’s get to work</h1>
+        <button routerLink="/contact" >Get in touch</button>
+    </div>
+</section>

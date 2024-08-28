@@ -1,0 +1,32 @@
+<div>
+    <div class="img-container">
+        <img [src]="member.imgUrl" alt="">
+        <div class="social">            
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <ng-icon size="18" name="featherInstagram"></ng-icon>
+            </a>
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <ng-icon size="18" name="featherFacebook"></ng-icon>
+            </a>
+            <a
+              href="https://www.linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <ng-icon size="18" name="featherLinkedin"></ng-icon>
+            </a>
+          </div>
+    </div>
+    <div class="info-container">
+        <h1>{{member.name}}</h1>
+        <p>{{member.position}}</p>
+    </div>
+</div>
