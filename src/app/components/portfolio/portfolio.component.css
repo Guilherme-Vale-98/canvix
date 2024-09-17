@@ -1,0 +1,123 @@
+section {
+    text-align: center;
+    font-family: "Roboto Serif", serif;
+    margin-top: 60px;
+    padding: 0 150px;
+    position: relative;
+}
+
+.title{
+    font-size: 54px;
+    color: white;
+    background: black;
+    height: 200px;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;  
+    align-items: center;  
+}
+.grid-container{
+    display: grid;
+    height: 80%;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 2rem;
+}
+
+
+.grid-item{
+    display: flex;
+    margin-top: 2rem;
+}
+
+.grid-item:nth-child(even){
+    align-self: flex-end;
+    justify-self: left;
+    margin-left: 25px;
+}
+.grid-item:nth-child(odd){
+    align-self: flex-start;
+    justify-self: right;
+    margin-right: 25px;
+}
+
+
+.call-to-work {
+    margin-bottom: 50px;
+    height: 210px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('/assets/call%20to%20action.png');
+    background-size: cover; 
+    background-position: center;
+    border-radius: 20px;
+    font-family: "Roboto Serif", serif;
+    font-size: 35px;
+    color: white;
+    font-weight: 600;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.call-to-work button {
+    all: unset;
+    text-align: center;
+    width: 139px;
+    height: 47px;
+    font-weight: 400;
+    border-radius: 3rem;
+    font-size: 16px;
+    color: #0c0c0c;
+    background-color: #ffffff;
+    cursor: pointer;
+    font-family: "DM Sans", sans-serif;  
+}
+
+
+/* small screens */
+@media screen and (max-width: 500px) {
+    section {
+        padding: 0 20px;
+    }
+    .grid-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .grid-item{
+        display: flex;
+        margin-top: 2rem;
+    }
+    
+    .grid-item:nth-child(even){
+        align-self: flex-end;
+        justify-self: center;
+        margin-left: 0px;
+    }
+    .grid-item:nth-child(odd){
+        align-self: flex-start;
+        justify-self: center;
+        margin-right: 0px;
+    }
+
+    .call-to-work{
+        width: 100%;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;  
+        align-items: center;
+    }
+
+    .call-to-work button {
+
+        width: 100px;
+        height: 40px;
+        border-radius: 3rem;
+        font-size: 14px;
+
+    }
+}

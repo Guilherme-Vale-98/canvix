@@ -20,7 +20,6 @@ export class NavbarComponent {
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
         this.isHomePage = this.router.url === '/home';
-        console.log(this.isHomePage)
         if (this.isHomePage) {
           this.checkScrollPosition();
           return
